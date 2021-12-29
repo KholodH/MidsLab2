@@ -23,12 +23,7 @@ class SecondViewController: UIViewController {
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
           let destination = segue.destination as! ViewController
-        
-       
-        destination.adjective = adjective.text ?? "Error"
-        destination.verbOne = verb1.text ?? "Error"
-        destination.verbTwo = verb2.text ?? "Error"
-        destination.noun = noun.text ?? "Error"
+        destination.sentanceLabel.text = "We are having a perfectly \(adjective.text!) right now. Later we will \(verb1.text!) and \(verb2.text!) in the \(noun.text!)"
       }
    
 
